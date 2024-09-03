@@ -1,0 +1,27 @@
+memory allocation
+
+
+In java script , the memory allocation is basically of two types 
+
+
+Stored in Stack 
+and stored in Heap 
+
+Stack
+ ______________     
+|             |          // Consider i added   int ans = 5
+|             |              it will store in the stack and 
+|             |              its copy , if we use it again 
+| ans         |             newans = ans;
+| newans      |             Now if we change in newans
+|_ans_________|          it does'nt mean it will change ans also
+                          newans is holdng a copy of ans
+Heap
+______________
+|             |
+|             |
+|             |
+|             |  
+|             |
+|             | 
+|_____________|
