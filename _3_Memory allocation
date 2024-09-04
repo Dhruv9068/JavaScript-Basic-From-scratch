@@ -19,9 +19,9 @@ Stack
 Heap
 ______________
 |             |
-|             |
-|             |
-|             |  
-|             |
-|             | 
-|_____________|
+|             |          in heap basically we got directly
+|  {id:5      |          referecnce 
+|,Name="dhruv |          for example 
+|          }  |      obj={ id :5 , name="dhruv"}
+|             |       object 2= obj
+|_____________|      now bsically what happend if you make change in  object 2 then it will change in obj also.
