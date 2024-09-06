@@ -40,3 +40,17 @@ function Animal(name) {
 
   let dog = new Animal("Fido");
   dog.sound(); // Output: The animal makes a sound.
+
+
+
+  let h="hello there ";
+
+  console.log(h.toUpperCase());
+  console.log(h.toLowerCase());
+  console.log(h.replace(1,2));
+  console.log(h.split(' '));
+  console.log(h.trim());
+  console.log(h.charAt(3));
+  console.log(h.slice(0,5));
+  console.log(h.substring(0,5));
+  console.log(h.slice(-10,-5));
