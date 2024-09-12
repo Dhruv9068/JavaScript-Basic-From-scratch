@@ -52,5 +52,10 @@ function Animal(name) {
   console.log(h.trim());
   console.log(h.charAt(3));
   console.log(h.slice(0,5));
-  console.log(h.substring(0,5));
-  console.log(h.slice(-10,-5));
+  console.log(h.substring(1,5));
+  console.log(h.slice(-12));
+  console.log("How to reverse the string?? -> " , h.split('').reverse().join('').trim());
+  console.log(h.concat(",I am Dhruv"));
+  console.log(h.indexOf("there"));
+  console.log(h.length);
+  console.log(h.lastIndexOf('e'));
