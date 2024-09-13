@@ -18,3 +18,4 @@ console.log(obj);
 console.log(Myobj);
 
 // both returns the empty object in same way there is no internal difference
+//
