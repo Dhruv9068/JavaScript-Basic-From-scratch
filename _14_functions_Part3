@@ -1,0 +1,42 @@
+
+// now lets try nested funcition 
+
+
+// basic closure  topic 
+function one(){
+    const username ='hitesh';
+
+    function two() {
+        const website =" youtube";
+        console.log(username);
+    }
+   //  console.log(website);  gives error not in scope of two
+    two();
+}
+one();
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// imp example
+
+// type 1 of function
+
+addone(5);   // experiment 1      No erros 
+function addone(num){
+    return num +1;
+}
+
+// addone(5);     isko ab declaration ke upar laga dete hai 
+
+
+
+// type 2  of fucntion  declaration  note :  but it gives error if used before declaration 
+//addTwo(5);     // experiment 2        error occurs here 
+const addTwo = function(num){     // storing function under a variable
+    return num +2;
+}
+// addTwo(5);    isko ab declaration ke upar laga dete hai 
+
+
+
