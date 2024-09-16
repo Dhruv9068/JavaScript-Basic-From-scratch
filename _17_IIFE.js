@@ -13,3 +13,5 @@
 // (
 //     function Your_fun (){}
 // )()
+
+// the above is the syntax 
