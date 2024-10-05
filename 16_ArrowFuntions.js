@@ -21,3 +21,5 @@ console.log(addTwoNumberImp(5,6));   // same output
 // or use 
 const addTwo =(a,b) => (a+b);   // but if we use {} return is compulsory 
 console.log(addTwo(5,6));
+
+
