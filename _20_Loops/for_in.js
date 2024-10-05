@@ -23,12 +23,12 @@ for (const index in str) {
 }
 
 // NodeLists (e.g., HTMLCollection)
-const elements = document.querySelectorAll('div');
-console.log("\nNodeLists:");
-// Using for...in loop to iterate over NodeList elements
-for (const index in elements) {
-  console.log(`Index: ${index}, Element: ${elements[index]}`);
-}
+// const elements = document.querySelectorAll('div');
+// console.log("\nNodeLists:");
+// // Using for...in loop to iterate over NodeList elements
+// for (const index in elements) {
+//   console.log(`Index: ${index}, Element: ${elements[index]}`);
+// }
 
 // Arguments object (in a function)
 function foo() {
