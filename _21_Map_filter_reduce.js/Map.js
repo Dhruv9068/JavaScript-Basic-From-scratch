@@ -3,7 +3,7 @@
 
 // Comparison with for loop, for each, and filter
 // for loop: used for iterating over an array and performing some action on each element
-// for each: similar to for loop, but provides a more concise way of iterating over an array
+// for each: similar to fo loop, but provides a more concise way of iterating over an array
 // filter: used for creating a new array with all elements that pass the test implemented by the provided function
 // map: used for creating a new array with the results of applying the provided function on every element in the calling array
 
