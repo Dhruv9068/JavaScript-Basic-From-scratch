@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        background-color: #212121;
+        color:white;
+    }
+    #Ln_img{
+        width:300px;
+        height:300px;
+        border: 20px solid blue;
+    }
+
+    
+
+</style>
+<body>
+    <h1 class="EL">Event Listners Practive</h1>
+    <ul id="Image">
+        <li><img class="Ln_img " id="Ln_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV49oOhhq3co7kswo11SlEPDm2kw-IgZTo9A&s" alt="dhruv_image"></li>
+        <li><img class="Ln_img 2" id="Ln_img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV49oOhhq3co7kswo11SlEPDm2kw-IgZTo9A&s" alt="dhruv_image"></li>
+        <li>
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1YTUH_enIN1099IN1099&oq=google&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYPDITCAEQLhiDARjHARixAxjRAxiABDIGCAIQRRg8MgYIAxBFGDwyBggEEEUYPDIGCAUQBRhAMgYIBhBFGDwyBggHEEUYQdIBCDQzNzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" id="Google">Google</a>
+        </li>
+    </ul>
+    
+
+</body>
+<script>
+    // document.getElementById('Ln_img').onclick = function(){
+    //     alert("Image clicked");
+    //     console.log(e)
+    // }
+
+/*   There ar two terms under event prapogation
+ bubbling (bottom to top)and Capturing(top to bottom) event
+*/
+
+
+    document.getElementById('Ln_img').addEventListener('click',
+    function(e){
+        console.log("Bubbling when both are false ")
+        console.log("Inner image clicked blue border ")
+    
+},false);  // if ture  first UI Outer will print then inner will print called capturing
+
+document.getElementById('Image').addEventListener('click',
+    function(e){
+        
+        console.log("Ul of image clicked outer image")
+    
+},false);  // if ture  first UI Outer will print then inner will print called capturing
+
+
+// right now as both are false it will be bubbling bottom to top
+
+
+document.getElementById('Google').addEventListener('click' , function(e){
+   console.log("Google clicked");
+   e.preventDefault();
+    // if you don't want to add this in bubbling
+    
+})
+
+
+document.querySelector('#Image').addEventListener('click',
+    function(e){
+        
+         //ul
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let targetimg = e.target.parentNode; 
+             targetimg.remove();
+        }
+        // targetimg.parentNode.removeChild(targetimg)
+    
+},false);
+
+
+</script>
+
+</html>
